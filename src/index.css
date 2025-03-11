@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+.orbitron{
+  font-family: "Orbitron", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+section{
+  z-index: 5;
+}
+
+li:hover{
+  cursor: pointer;
+}
+.grid-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 50px 50px;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  z-index: 1;
+  animation: moveGrid 8s linear infinite;
+}
+
+@keyframes moveGrid {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 50px 50px;
+  }
+}
+
+
