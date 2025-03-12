@@ -8,30 +8,30 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
   // Sample sponsors data for three layers if none provided
   const defaultSponsors = {
     platinum: [
-      { id: 1, name: "TechCorp", image: "/api/placeholder/100/100", tier: "Platinum" },
-      { id: 2, name: "InnovateCo", image: "/api/placeholder/100/100", tier: "Platinum" },
-      { id: 3, name: "FutureTech", image: "/api/placeholder/100/100", tier: "Platinum" }
+      // { id: 1, name: "TechCorp", image: "/Previous Sponsors 100 x 100/0.png", tier: "Platinum" },
+      //{ id: 2, name: "InnovateCo", image: "/Previous Sponsors 100 x 100/0.png", tier: "Platinum" },
+      //{ id: 3, name: "FutureTech", image: "/Previous Sponsors 100 x 100/0.png", tier: "Platinum" }
     ],
     gold: [
-      { id: 4, name: "DevGroup", image: "/api/placeholder/100/100", tier: "Gold" },
-      { id: 5, name: "CloudSys", image: "/api/placeholder/100/100", tier: "Gold" },
-      { id: 6, name: "NetWorks", image: "/api/placeholder/100/100", tier: "Gold" },
-      { id: 7, name: "DataLabs", image: "/api/placeholder/100/100", tier: "Gold" }
+      { id: 4, name: "DevGroup", image: "/Previous Sponsors 100 x 100/1.png", tier: "Gold" },
+      { id: 5, name: "CloudSys", image: "/Previous Sponsors 100 x 100/2.png", tier: "Gold" },
+      { id: 6, name: "NetWorks", image: "/Previous Sponsors 100 x 100/3.png", tier: "Gold" },
+      { id: 7, name: "DataLabs", image: "/Previous Sponsors 100 x 100/4.png", tier: "Gold" }
     ],
     silver: [
-      { id: 8, name: "CodeCraft", image: "/api/placeholder/100/100", tier: "Silver" },
-      { id: 9, name: "AppStudio", image: "/api/placeholder/100/100", tier: "Silver" },
-      { id: 10, name: "WebSphere", image: "/api/placeholder/100/100", tier: "Silver" },
-      { id: 11, name: "ByteWorks", image: "/api/placeholder/100/100", tier: "Silver" },
-      { id: 12, name: "TechSolutions", image: "/api/placeholder/100/100", tier: "Silver" },
-      { id: 13, name: "DigitalEdge", image: "/api/placeholder/100/100", tier: "Silver" }
+      { id: 8, name: "CodeCraft", image: "/Previous Sponsors 100 x 100/5.png", tier: "Silver" },
+      { id: 9, name: "AppStudio", image: "Previous Sponsors 100 x 100/6.png", tier: "Silver" },
+      { id: 10, name: "WebSphere", image: "Previous Sponsors 100 x 100/7.png", tier: "Silver" },
+      { id: 11, name: "ByteWorks", image: "Previous Sponsors 100 x 100/8.png", tier: "Silver" },
+      { id: 12, name: "TechSolutions", image: "Previous Sponsors 100 x 100/9.png", tier: "Silver" },
+      { id: 13, name: "DigitalEdge", image: "Previous Sponsors 100 x 100/10.png", tier: "Silver" }
     ]
   };
 
   // Use provided sponsors or default ones
   const sponsorsList = sponsors.length > 0 
     ? {
-        platinum: sponsors.filter(s => s.tier === "Platinum"),
+        // platinum: sponsors.filter(s => s.tier === "Platinum"),
         gold: sponsors.filter(s => s.tier === "Gold"),
         silver: sponsors.filter(s => s.tier === "Silver")
       }
@@ -39,7 +39,7 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
   
   // State to track animation for each layer (different speeds)
   const [rotations, setRotations] = useState({
-    platinum: 0,
+    // platinum: 0,
     gold: 120,     // Start at 120 degrees offset
     silver: 240    // Start at 240 degrees offset
   });
@@ -186,7 +186,7 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
               style={{ width: `${getCenterSize()}px`, height: `${getCenterSize()}px` }}
             >
               <div className="text-center p-4">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl orbitron font-bold text-[#5D5D9C] uppercase">Our</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl orbitron font-bold text-[#5D5D9C] uppercase">Past</h3>
                 <h3 className="text-2xl sm:text-3xl md:text-4xl orbitron font-bold text-[#5D5D9C] uppercase">Sponsors</h3>
               </div>
             </div>

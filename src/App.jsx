@@ -111,7 +111,7 @@ const App = () => {
                 transition={{ duration: 1.5 }}
             >
                 <h1 className="orbitron text-white font-light md:text-[3vw] text-[8vw] mb-20">
-                    What is Signifiya?
+                    Discover Signifiya 2025
                 </h1>
                 <p className="text-white max-w-8xl md:text-[1.2vw] text-[3.5vw] text-center md:px-28 px-6 ">
                     Signifiya 2k25 is the annual inter-university tech fest

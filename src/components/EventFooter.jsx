@@ -61,15 +61,15 @@ const EventFooter = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="mr-2 text-purple-500 flex-shrink-0 mt-1" size={18} />
-                <span className="text-gray-400">123 Event Avenue, Conference Hall, City, Country</span>
+                <span className="text-gray-400">Adamas University, Adamas Knowledge City, Barasat - Barrackpore Road, Jagannathpur, Kolkata, West Bengal 700126</span>
               </li>
               <li className="flex items-center">
                 <Phone className="mr-2 text-purple-500 flex-shrink-0" size={18} />
-                <a href="tel:+123456789" className="text-gray-400 hover:text-purple-400 transition">+1 (234) 567-890</a>
+                <a href="tel:+123456789" className="text-gray-400 hover:text-purple-400 transition"> +91-7085431394 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="mr-2 text-purple-500 flex-shrink-0" size={18} />
-                <a href="mailto:info@event.com" className="text-gray-400 hover:text-purple-400 transition">info@event.com</a>
+                <a href="mailto:info@event.com" className="text-gray-400 hover:text-purple-400 transition">abhishek85431@gmail.com</a>
               </li>
             </ul>
           </div>

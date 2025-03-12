@@ -29,7 +29,7 @@ const EventsSection = () => {
                     details:
                         "Design a robot that can traverse an obstacle-filled terrain and complete missions.",
                     timing: "To Be Announced",
-                    location: "Open Arena",
+                    location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹10,000",
                 },
@@ -46,9 +46,9 @@ const EventsSection = () => {
                     bg: "/api/placeholder/350/350",
                     details:
                         "Compete in an intense battle royale match and fight for survival.",
-                    timing: "3 PM - 6 PM",
-                    location: "Gaming Zone",
-                    price: "₹150 per player / ₹600 per squad",
+                    timing: "To Be Announced",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹20,000 (₹13k for 1st, ₹5k for 2nd, ₹2k for 3rd)",
                 },
                 {
@@ -58,8 +58,8 @@ const EventsSection = () => {
                     details:
                         "Show your tactical prowess in this 5v5 shooter tournament.",
                     timing: "4 PM - 8 PM",
-                    location: "Gaming Zone",
-                    price: "₹100 per player / ₹500 per team",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹10,000",
                 },
                 {
@@ -69,8 +69,8 @@ const EventsSection = () => {
                     details:
                         "Compete in this exciting football esports tournament.",
                     timing: "Coming Soon",
-                    location: "Gaming Zone",
-                    price: "₹100",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹10,000",
                 },
             ],
@@ -86,8 +86,8 @@ const EventsSection = () => {
                     bg: "/api/placeholder/350/350",
                     details: "Solve complex problems in this coding showdown.",
                     timing: "11 AM - 2 PM",
-                    location: "Computer Lab",
-                    price: "₹200",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹7,000 (₹5k for 1st, ₹2k for 2nd)",
                 },
                 {
@@ -97,8 +97,8 @@ const EventsSection = () => {
                     details:
                         "Test your knowledge in science, logic, and critical thinking.",
                     timing: "To Be Announced",
-                    location: "Lecture Hall",
-                    price: "₹100",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹4,000",
                 },
                 {
@@ -108,8 +108,8 @@ const EventsSection = () => {
                     details:
                         "Design and build electrical circuits to complete a challenge.",
                     timing: "2 PM - 5 PM",
-                    location: "EEE Lab",
-                    price: "₹150",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹10,000 (₹5k for 1st, ₹2k for 2nd)",
                 },
             ],
@@ -126,8 +126,8 @@ const EventsSection = () => {
                     details:
                         "Create an innovative project using waste materials.",
                     timing: "Coming Soon",
-                    location: "Workshop Area",
-                    price: "₹100",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
                 },
                 {
@@ -137,8 +137,8 @@ const EventsSection = () => {
                     details:
                         "Precision machining competition using a lathe machine.",
                     timing: "To Be Announced",
-                    location: "Mechanical Workshop",
-                    price: "₹150",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
                 },
             ],
@@ -154,8 +154,8 @@ const EventsSection = () => {
                     bg: "/api/placeholder/350/350",
                     details: "Design and build a stable bridge model.",
                     timing: "Coming Soon",
-                    location: "Civil Lab",
-                    price: "₹150",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
                 },
                 {
@@ -165,8 +165,8 @@ const EventsSection = () => {
                     details:
                         "Construct a strong tower that can withstand tests.",
                     timing: "To Be Announced",
-                    location: "Civil Lab",
-                    price: "₹150",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
                 },
             ],
@@ -183,8 +183,8 @@ const EventsSection = () => {
                     details:
                         "Solve riddles, find clues, and race to uncover the hidden treasure.",
                     timing: "10 AM - 1 PM",
-                    location: "Entire Campus",
-                    price: "₹100",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹6,000",
                 },
                 {
@@ -194,8 +194,8 @@ const EventsSection = () => {
                     details:
                         "The ultimate test of teamwork and strength in a friendly competition.",
                     timing: "3 AM - 5 PM",
-                    location: "Open Ground",
-                    price: "₹200",
+                    location: "Information Upcoming",
+                    price: "Coming Soon",
                     prize: "₹10,000",
                 },
             ],
