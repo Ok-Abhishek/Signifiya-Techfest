@@ -8,6 +8,8 @@ import TwoLayerOrbitingSponsors from "./components/TwoLayerOrbitingSponsors";
 import EventFooter from "./components/EventFooter";
 import logo from "/img.png";
 import Typewriter from "./components/Typewriter";
+import EventsSection from "./components/EventsSection";
+import SignifiyaFAQ from "./components/SignifiyaFAQ";
 
 const events = [
     {
@@ -49,27 +51,27 @@ const App = () => {
                         <ul className=" flex items-center gap-7 justify-between">
                             <li className=" flex items-center gap-2">
                                 <img className=" h-12" src={logo} alt="" />
-                                
                             </li>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Events</li>
-                            <li>Contact</li>
+                            <li className="md:block hidden">Home</li>
+                            <li className="md:block hidden">About</li>
+                            <li className="md:block hidden">Events</li>
+                            <li className="md:block hidden">Contact</li>
                         </ul>
                     </div>
-                    <div className=" absolute bottom-0 flex flex-row-reverse w-[90vw] justify-between m-3 mx-5">
-                        <div>
+                    <div className=" absolute bottom-0 flex flex-row w-[90vw] justify-between m-3 mx-5">
+                        <Typewriter />
+                        <div className="md:block hidden">
                             <h3 className="text-3xl mb-2 orbitron text-white">
                                 Innovate. Elevate. Dominate.
                             </h3>
-                            <p className=" text-white w-[600px] text-lg">
+                            <p className=" text-white w-[600px]  text-lg">
                                 Step into the future at Signifya, where
                                 cutting-edge tech, creative brilliance, and
                                 revolutionary ideas collide to redefine
                                 possibilities!
                             </p>
                         </div>
-                        <Typewriter />
+                        
                     </div>
                     <div className="orbitron cursor-pointer z-20 absolute right-0 top-0  w-[70px] py-3 flex flex-col items-center justify-center rounded-bl-3xl">
                         <ul className=" uppercase flex flex-col items-center text-white px-4 py-3 rounded-xl font-semibold bg-[#2D2D62]">
@@ -108,87 +110,28 @@ const App = () => {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}
             >
-                <h1 className="orbitron text-white font-light md:text-[3vw] text-[10vw] mb-5">
+                <h1 className="orbitron text-white font-light md:text-[3vw] text-[8vw] mb-20">
                     What is Signifiya?
                 </h1>
-                <p className="text-white max-w-2xl text-lg">
-                    Signifiya 2k25 is a premier tech fest featuring cutting-edge
-                    competitions, futuristic projects, and engaging talks by
-                    industry experts.
+                <p className="text-white max-w-8xl md:text-[1.2vw] text-[3.5vw] text-center md:px-28 px-6 ">
+                    Signifiya 2k25 is the annual inter-university tech fest
+                    organized by the School of Engineering and Technology
+                    (SOET), Adamas University. Designed to foster innovation and
+                    collaboration, the event brings together technology
+                    enthusiasts from various institutions to compete, explore,
+                    and showcase their skills. With a diverse range of
+                    competitions—including robotics, coding, gaming, and fun
+                    knowledge-based events— Signifiya 2025 aims to create an
+                    engaging platform for learning, networking, and pushing the
+                    boundaries of technology. Join us, and be part of a
+                    celebration where creativity meets excellence!
                 </p>
             </motion.section>
 
-            {/* Events Section */}
-            <motion.section
-                className="w-screen min-h-screen overflow-hidden  flex flex-col items-center justify-center relative text-center"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.5 }}
-            >
-                <h1 className="orbitron text-white font-light md:text-[3vw] text-[10vw] mb-20">
-                    Events
-                </h1>
-                <div className="flex flex-wrap gap-6 justify-center">
-                    {events.map((event) => (
-                        <motion.div
-                            key={event.id}
-                            className="relative w-[350px] h-[350px] rounded-xl overflow-hidden cursor-pointer 
-                                   transition-all duration-300 ease-in-out border border-[#9c0390] 
-                                   hover:scale-110 active:scale-95"
-                            style={{
-                                backgroundImage: `url(${event.bg})`,
-                                backgroundSize: "cover",
-                                backgroundPosition: "center",
-                            }}
-                            onClick={() => setSelectedEvent(event)}
-                            whileHover={{ scale: 1.05, rotate: 2 }}
-                        >
-                            {/* Futuristic Inner Glow */}
-                            <div
-                                className="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-md 
-                                        flex items-center justify-center text-white text-2xl font-extrabold 
-                                        uppercase tracking-wider neon-text"
-                            >
-                                {event.name}
-                            </div>
-
-                            {/* Inner Glowing Effect (Soft Pink & Purple) */}
-                            <div className="absolute inset-0 bg-[#9c0390] opacity-10 mix-blend-color-dodge"></div>
-
-                            {/* Animated Inner Shadows for Depth */}
-                            <div
-                                className="absolute inset-0 rounded-xl bg-gradient-to-b from-transparent 
-                                        via-[#9c0390]/30 to-transparent opacity-60 pointer-events-none"
-                            ></div>
-
-                            {/* Inner Border Glow */}
-                            <div
-                                className="absolute inset-0 rounded-xl border-2 border-transparent 
-                                        hover:border-[#9c0390] hover:shadow-inner transition-all duration-300"
-                            ></div>
-                        </motion.div>
-                    ))}
-                </div>
-            </motion.section>
-
-            {/* Event Details Popup */}
-            {selectedEvent && (
-                // <motion.div className="fixed top-0 z-10 left-0 w-screen h-screen flex items-center justify-center  bg-opacity-70"
-                //     initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-                //     <div className="bg-[#222] p-5 rounded-lg text-white max-w-md text-center relative">
-                //         <h2 className="text-2xl font-bold mb-2">{selectedEvent.name}</h2>
-                //         <p className="mb-4">{selectedEvent.details}</p>
-                //         <button className="bg-[#9c0390] px-4 py-2 rounded-lg" onClick={() => setSelectedEvent(null)}>Close</button>
-                //     </div>
-                // </motion.div>
-
-                <EventDetailsPage
-                    selectedEvent={selectedEvent}
-                    setSelectedEvent={setSelectedEvent}
-                />
-            )}
-
+            <EventsSection />
             <TwoLayerOrbitingSponsors />
+
+            <SignifiyaFAQ />
 
             <EventFooter />
         </main>

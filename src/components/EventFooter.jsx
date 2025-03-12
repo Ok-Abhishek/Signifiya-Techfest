@@ -5,18 +5,20 @@ const EventFooter = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-gray-900 w-full z-10 relative bottom-0 left-0 text-white">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {/* Event Info */}
-          <div>
-            <h3 className="text-xl font-bold mb-4">Event Name</h3>
+          <div >
+            <div className=' flex items-center gap-3'>
             <img 
-              src="/api/placeholder/150/60" 
+              src="/img.png" 
               alt="Event Logo" 
               className="h-12 mb-4"
             />
+            <h3 className="text-2xl font-bold mb-4 orbitron">Signifiya 2k25</h3>
+            </div>
             <p className="text-gray-400 mb-4">
               Join us for the most anticipated event of the year featuring amazing speakers, workshops, and networking opportunities.
             </p>
@@ -45,10 +47,10 @@ const EventFooter = () => {
             <ul className="space-y-2">
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Home</a></li>
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">About</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Schedule</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Speakers</a></li>
+              {/* <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Schedule</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Speakers</a></li> */}
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Sponsors</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Venue</a></li>
+              {/* <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Venue</a></li> */}
               <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Register</a></li>
             </ul>
           </div>
@@ -73,7 +75,7 @@ const EventFooter = () => {
           </div>
           
           {/* Newsletter */}
-          <div>
+          {/* <div>
             <h3 className="text-xl font-bold mb-4">Stay Updated</h3>
             <p className="text-gray-400 mb-4">Subscribe to our newsletter to get the latest updates about the event.</p>
             <form className="space-y-2">
@@ -89,7 +91,7 @@ const EventFooter = () => {
                 Subscribe
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
       </div>
       
@@ -97,7 +99,7 @@ const EventFooter = () => {
       <div className="border-t border-gray-800 py-6">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm">
-            © {currentYear} Event Name. All rights reserved.
+            © {currentYear} Signifiya 2k2k. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex space-x-6">

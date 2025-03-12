@@ -29,7 +29,7 @@ const Typewriter = () => {
     }, [displayText, isDeleting, textIndex]);
 
     return (
-        <h1 className="orbitron text-white font-light md:text-[4.5vw] text-[13vw]">
+        <h1 className="orbitron text-white font-light md:text-[4.5vw] text-[10vw]">
             {displayText}
             <span className="animate-ping">|</span> {/* Blinking cursor */}
         </h1>
