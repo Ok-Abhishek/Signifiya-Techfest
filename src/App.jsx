@@ -10,52 +10,42 @@ import logo from "/img.png";
 import Typewriter from "./components/Typewriter";
 import EventsSection from "./components/EventsSection";
 import SignifiyaFAQ from "./components/SignifiyaFAQ";
+import { Link } from "react-scroll";
+import FuturisticCursor from "./components/FuturisticCursor";
 
-const events = [
-    {
-        id: 1,
-        name: "Cyber Wars",
-        bg: "/event1.jpg",
-        details: "A thrilling hacking competition.",
-    },
-    {
-        id: 2,
-        name: "AI Battles",
-        bg: "/event2.jpg",
-        details: "Build and test AI models live.",
-    },
-    {
-        id: 3,
-        name: "Robo Race",
-        bg: "/event3.jpg",
-        details: "Race robots on complex tracks.",
-    },
-    {
-        id: 4,
-        name: "Future Talks",
-        bg: "/event4.jpg",
-        details: "Panel discussions with tech leaders.",
-    },
-];
+
 
 const App = () => {
     const [selectedEvent, setSelectedEvent] = useState(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     return (
         <main className="overflow-x-hidden relative bg-[#181818]">
+            <FuturisticCursor />
             <div className="grid-bg"></div>
             {/* Hero Section */}
-            <section className="w-screen overflow-hidden h-screen  flex flex-col items-center justify-center relative">
+            <section id="home" className="w-screen overflow-hidden h-screen  flex flex-col items-center justify-center relative">
                 <div className="relative w-[93vw] h-[90vh] rounded-3xl overflow-hidden">
                     <div className=" z-30 orbitron absolute top-0 left-0 m-3  text-white">
-                        <ul className=" flex items-center gap-7 justify-between">
-                            <li className=" flex items-center gap-2">
-                                <img className=" h-12" src={logo} alt="" />
+                        <ul className="flex items-center gap-7 justify-between">
+                            <li className="flex items-center gap-2">
+                                <img className="h-12" src={logo} alt="" />
                             </li>
-                            <li className="md:block hidden">Home</li>
-                            <li className="md:block hidden">About</li>
-                            <li className="md:block hidden">Events</li>
-                            <li className="md:block hidden">Contact</li>
+                            <li className="md:block hidden">
+                                <Link to="home" smooth={true} duration={800}>Home</Link>
+                            </li>
+                            <li className="md:block hidden">
+                                <Link to="about" smooth={true} duration={800}>About</Link>
+                            </li>
+                            <li className="md:block hidden">
+                                <Link to="events" smooth={true} duration={800}>Events</Link>
+                            </li>
+                            <li className="md:block hidden">
+                                <Link to="sponsors" smooth={true} duration={800}>Sponsors</Link>
+                            </li>
+                            <li className="md:block hidden">
+                                <Link to="contact" smooth={true} duration={800}>Contact</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className=" absolute bottom-0 flex flex-row w-[90vw] justify-between m-3 mx-5">
@@ -71,9 +61,9 @@ const App = () => {
                                 possibilities!
                             </p>
                         </div>
-                        
+
                     </div>
-                    <div className="orbitron cursor-pointer z-20 absolute right-0 top-0  w-[70px] py-3 flex flex-col items-center justify-center rounded-bl-3xl">
+                    <div onClick={() => setIsModalOpen(true)} className="orbitron cursor-pointer z-20 absolute right-0 top-0  w-[70px] py-3 flex flex-col items-center justify-center rounded-bl-3xl">
                         <ul className=" uppercase flex flex-col items-center text-white px-4 py-3 rounded-xl font-semibold bg-[#2D2D62]">
                             <li>R</li>
                             <li>e</li>
@@ -105,6 +95,7 @@ const App = () => {
 
             {/* What is Signifiya? */}
             <motion.section
+                id="about"
                 className="w-screen min-h-screen overflow-hidden  flex flex-col items-center justify-center relative text-center"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -134,6 +125,38 @@ const App = () => {
             <SignifiyaFAQ />
 
             <EventFooter />
+
+            {/* Registration Modal */}
+            {isModalOpen && (
+                <div className="fixed top-0 z-30 left-0 w-screen h-screen flex items-center justify-center bg-black/70  bg-opacity-70 p-4 overflow-y-auto">
+                    <div className="bg-[#1d1d1d] text-center p-10 border-2 border-[#2D2D62] rounded-xl max-w-2xl w-full shadow-xl overflow-hidden">
+                        <button 
+                            className="absolute top-3 right-4 text-2xl hover:text-gray-300" 
+                            onClick={() => setIsModalOpen(false)}
+                        >
+                            &times;
+                        </button>
+                        <h2 className="text-2xl font-semibold text-white">Registration Opening Soon!</h2>
+                        <p className="mt-3 text-gray-300">
+                            Stay tuned! Registration will be available soon. Keep an eye out for updates.
+                        </p>
+                        
+                        {/* QR Code Placeholder */}
+                        <div className="mt-10 flex items-center justify-center">
+                            <div className="w-52 h-52 bg-gray-800 flex items-center justify-center rounded-lg">
+                                <p className="text-sm text-gray-400">QR Code Soon</p>
+                            </div>
+                        </div>
+
+                        <button 
+                            className="mt-10 bg-[#2D2D62] text-white px-5 py-2 rounded-lg w-full hover:bg-[#3A3A9F]"
+                            onClick={() => setIsModalOpen(false)}
+                        >
+                            Close
+                        </button>
+                    </div>
+                </div>
+            )}
         </main>
     );
 };

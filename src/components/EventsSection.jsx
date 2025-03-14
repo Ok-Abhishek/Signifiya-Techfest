@@ -218,6 +218,7 @@ const EventsSection = () => {
 
     return (
         <motion.section
+            id="events"
             className="w-screen min-h-screen overflow-hidden flex flex-col items-center py-32 z-50 justify-center relative text-center "
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}

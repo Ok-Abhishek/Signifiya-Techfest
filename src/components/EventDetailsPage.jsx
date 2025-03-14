@@ -54,7 +54,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
           {/* Event Info Grid */}
           <div className="grid grid-cols-2 gap-4 mb-6">
             <div className="flex items-start gap-2">
-              <Clock className="text-purple-600 mt-1 flex-shrink-0" size={20} />
+              <Clock className="text-blue-800 mt-1 flex-shrink-0" size={20} />
               <div>
                 <h3 className="font-semibold text-sm text-gray-500">TIMING</h3>
                 <p>{selectedEvent.timing || "TBA"}</p>
@@ -62,7 +62,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
             </div>
             
             <div className="flex items-start gap-2">
-              <MapPin className="text-purple-600 mt-1 flex-shrink-0" size={20} />
+              <MapPin className="text-blue-800 mt-1 flex-shrink-0" size={20} />
               <div>
                 <h3 className="font-semibold text-sm text-gray-500">LOCATION</h3>
                 <p>{selectedEvent.location || "TBA"}</p>
@@ -70,7 +70,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
             </div>
             
             <div className="flex items-start gap-2">
-              <DollarSign className="text-purple-600 mt-1 flex-shrink-0" size={20} />
+              <DollarSign className="text-blue-800 mt-1 flex-shrink-0" size={20} />
               <div>
                 <h3 className="font-semibold text-sm text-gray-500">PRICE</h3>
                 <p>{selectedEvent.price || "Free"}</p>
@@ -78,7 +78,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
             </div>
             
             <div className="flex items-start gap-2">
-              <Award className="text-purple-600 mt-1 flex-shrink-0" size={20} />
+              <Award className="text-blue-800 mt-1 flex-shrink-0" size={20} />
               <div>
                 <h3 className="font-semibold text-sm text-gray-500">PRIZE</h3>
                 <p>{selectedEvent.prize || "N/A"}</p>
@@ -94,7 +94,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
           
           {/* Register Button */}
           <div className="mt-6">
-            <button className="bg-purple-600 orbitron hover:bg-purple-700 transition text-white px-6 py-3 rounded-lg w-full font-semibold">
+            <button className="bg-bluetext-blue-800 orbitron hover:bg-purple-700 transition text-white px-6 py-3 rounded-lg w-full font-semibold">
               Register Now
             </button>
           </div>

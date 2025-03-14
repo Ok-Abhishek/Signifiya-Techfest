@@ -167,8 +167,8 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
   };
 
   return (
-    <section className="w-full overflow-hidden py-20 mb-10 flex flex-col items-center justify-center">
-      <div className="container  mx-auto text-center px-4">
+    <section id='sponsors' className="w-full overflow-hidden py-20 mb-10 flex flex-col items-center justify-center">
+      <div className="container relative z-20  mx-auto text-center px-4">
         <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-[#8080B3] orbitron">Partners & Sponsors</h2>
         <p className="text-[#8080B3] mb-10 sm:mb-16 max-w-2xl mx-auto text-sm sm:text-base">
           Thank you to all the organizations that made this event possible.
