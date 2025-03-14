@@ -130,8 +130,8 @@ const App = () => {
             {isModalOpen && (
                 <div className="fixed top-0 z-30 left-0 w-screen h-screen flex items-center justify-center bg-black/70  bg-opacity-70 p-4 overflow-y-auto">
                     <div className="bg-[#1d1d1d] text-center p-10 border-2 border-[#2D2D62] rounded-xl max-w-2xl w-full shadow-xl overflow-hidden">
-                        <button 
-                            className="absolute top-3 right-4 text-2xl hover:text-gray-300" 
+                        <button
+                            className="absolute top-3 right-4 text-2xl hover:text-gray-300"
                             onClick={() => setIsModalOpen(false)}
                         >
                             &times;
@@ -140,15 +140,20 @@ const App = () => {
                         <p className="mt-3 text-gray-300">
                             Stay tuned! Registration will be available soon. Keep an eye out for updates.
                         </p>
-                        
+
                         {/* QR Code Placeholder */}
                         <div className="mt-10 flex items-center justify-center">
-                            <div className="w-52 h-52 bg-gray-800 flex items-center justify-center rounded-lg">
+                            <img
+                                src="/registration-opening-soon.gif"  // Add your GIF or image in the public folder
+                                alt="Registration Opening Soon"
+                                className="w-52 h-52 rounded-lg"
+                            />
+                            {/* <div className="w-52 h-52 bg-gray-800 flex items-center justify-center rounded-lg">
                                 <p className="text-sm text-gray-400">QR Code Soon</p>
-                            </div>
+                            </div> */}
                         </div>
 
-                        <button 
+                        <button
                             className="mt-10 bg-[#2D2D62] text-white px-5 py-2 rounded-lg w-full hover:bg-[#3A3A9F]"
                             onClick={() => setIsModalOpen(false)}
                         >
