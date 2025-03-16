@@ -191,7 +191,7 @@ const EventsSection = () => {
                 {
                     id: 601,
                     name: "Treasure Hunt",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/14.png",
                     details:
                         "Solve riddles, find clues, and race to uncover the hidden treasure.",
                     timing: "10 AM - 1 PM",
@@ -203,7 +203,7 @@ const EventsSection = () => {
                 {
                     id: 602,
                     name: "Tug of War",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/13.png",
                     details:
                         "The ultimate test of teamwork and strength in a friendly competition.",
                     timing: "3 AM - 5 PM",
