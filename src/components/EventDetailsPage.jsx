@@ -31,7 +31,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
         {/* Event Image */}
         <div className="w-full h-64 bg-gray-200 relative">
           <img 
-            src={selectedEvent.image || "/api/placeholder/800/400"} 
+            src={selectedEvent.img || "/api/placeholder/800/400"} 
             alt={selectedEvent.name} 
             className="w-full h-full object-cover"
           />

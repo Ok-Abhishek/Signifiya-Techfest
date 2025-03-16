@@ -14,24 +14,26 @@ const EventsSection = () => {
                 {
                     id: 101,
                     name: "Path Follower",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/4.png",
                     details:
                         "Build an autonomous robot that can navigate a predefined path with precision and speed.",
                     timing: "To Be Announced",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹10,000",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
                 {
                     id: 102,
                     name: "Robo Terrain",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/5.png",
                     details:
                         "Design a robot that can traverse an obstacle-filled terrain and complete missions.",
                     timing: "To Be Announced",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹10,000",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
             ],
         },
@@ -43,35 +45,38 @@ const EventsSection = () => {
                 {
                     id: 201,
                     name: "BGMI (Battlegrounds Mobile India)",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/1.png",
                     details:
                         "Compete in an intense battle royale match and fight for survival.",
                     timing: "To Be Announced",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹20,000 (₹13k for 1st, ₹5k for 2nd, ₹2k for 3rd)",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
                 {
                     id: 202,
                     name: "Valorant",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/2.png",
                     details:
                         "Show your tactical prowess in this 5v5 shooter tournament.",
                     timing: "4 PM - 8 PM",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹10,000",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
                 {
                     id: 203,
                     name: "PES (Pro Evolution Soccer)",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/3.png",
                     details:
                         "Compete in this exciting football esports tournament.",
                     timing: "Coming Soon",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹10,000",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
             ],
         },
@@ -83,34 +88,37 @@ const EventsSection = () => {
                 {
                     id: 301,
                     name: "Coding Premier League",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/6.png",
                     details: "Solve complex problems in this coding showdown.",
                     timing: "11 AM - 2 PM",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹7,000 (₹5k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
                 {
                     id: 302,
                     name: "Science Olympiad",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/7.png",
                     details:
                         "Test your knowledge in science, logic, and critical thinking.",
                     timing: "To Be Announced",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹4,000",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
                 {
                     id: 303,
                     name: "Electrifying Circuits",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/8.png",
                     details:
                         "Design and build electrical circuits to complete a challenge.",
                     timing: "2 PM - 5 PM",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹10,000 (₹5k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
             ],
         },
@@ -122,24 +130,26 @@ const EventsSection = () => {
                 {
                     id: 401,
                     name: "Waste to Wealth",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/9.png",
                     details:
                         "Create an innovative project using waste materials.",
                     timing: "Coming Soon",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
                 {
                     id: 402,
                     name: "Lathe War",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/10.png",
                     details:
                         "Precision machining competition using a lathe machine.",
                     timing: "To Be Announced",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
             ],
         },
@@ -151,23 +161,25 @@ const EventsSection = () => {
                 {
                     id: 501,
                     name: "Bridge Making",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/11.png",
                     details: "Design and build a stable bridge model.",
                     timing: "Coming Soon",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
                 {
                     id: 502,
                     name: "Tower Making",
-                    bg: "/api/placeholder/350/350",
+                    bg: "/event/12.png",
                     details:
                         "Construct a strong tower that can withstand tests.",
                     timing: "To Be Announced",
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
             ],
         },
@@ -186,6 +198,7 @@ const EventsSection = () => {
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹6,000",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
                 {
                     id: 602,
@@ -197,6 +210,7 @@ const EventsSection = () => {
                     location: "Information Upcoming",
                     price: "Coming Soon",
                     prize: "₹10,000",
+                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
             ],
         },
@@ -280,7 +294,7 @@ const EventsSection = () => {
                     <div className="flex items-center mb-12">
                         <motion.button
                             onClick={handleBackToCategories}
-                            className="mr-4 text-[#5D5D9C] hover:text-white"
+                            className="mr-4 relative text-[#5D5D9C] hover:text-white"
                             whileHover={{ scale: 1.1 }}
                         >
                             <svg
@@ -320,7 +334,7 @@ const EventsSection = () => {
                             >
                                 {/* Futuristic Inner Glow */}
                                 <div
-                                    className="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-md 
+                                    className="absolute inset-0 bg-black/40  
                          flex items-center justify-center text-white text-2xl font-extrabold 
                          uppercase tracking-wider neon-text p-4"
                                 >
@@ -426,7 +440,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
                 {/* Event Image */}
                 <div className="w-full h-64 bg-gray-200 relative">
                     <img
-                        src={selectedEvent.image || "/api/placeholder/800/400"}
+                        src={selectedEvent.bg}
                         alt={selectedEvent.name}
                         className="w-full h-full object-cover"
                     />
@@ -523,9 +537,11 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
 
                     {/* Register Button */}
                     <div className="mt-6">
-                        <button className="bg-purple-600 orbitron hover:bg-purple-700 transition text-white px-6 py-3 rounded-lg w-full font-semibold">
-                            Register Now
-                        </button>
+                        <a href={selectedEvent.registrationLink} target="_blank" >
+                            <button className="bg-purple-600 orbitron hover:bg-purple-700 transition text-white px-6 py-3 rounded-lg w-full font-semibold">
+                                Register Now
+                            </button>
+                        </a>
                     </div>
                 </div>
             </motion.div>

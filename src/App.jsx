@@ -63,7 +63,7 @@ const App = () => {
                         </div>
 
                     </div>
-                    <div onClick={() => setIsModalOpen(true)} className="orbitron cursor-pointer z-20 absolute right-0 top-0  w-[70px] py-3 flex flex-col items-center justify-center rounded-bl-3xl">
+                    <Link to="events" smooth={true} duration={800}><div className="orbitron cursor-pointer z-20 absolute right-0 top-0  w-[70px] py-3 flex flex-col items-center justify-center rounded-bl-3xl">
                         <ul className=" uppercase flex flex-col items-center text-white px-4 py-3 rounded-xl font-semibold bg-[#2D2D62]">
                             <li>R</li>
                             <li>e</li>
@@ -81,7 +81,7 @@ const App = () => {
                         <div className="m-1 text-white p-4 bg-[#2D2D62] rounded-full">
                             <BsArrowUpRight />
                         </div>
-                    </div>
+                    </div></Link>
                     <div className=" orbitron absolute left-0 bottom-0 flex flex-col"></div>
                     <video
                         autoPlay
