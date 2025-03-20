@@ -16,7 +16,7 @@ const SignifiyaTimeTable = () => {
   const day2Events = [
     { eventName: "Coding Premier League", venue: "Main Auditorium", timing: "09:30 AM - 10:00 AM" },
     { eventName: "Circuitronix", venue: "Digital Arena, IT Block", timing: "10:30 AM - 01:00 PM" },
-    { eventName: "Path Followe", venue: "Electrical Lab, Block C", timing: "10:30 AM - 12:30 PM" },
+    { eventName: "Path Follower", venue: "Electrical Lab, Block C", timing: "10:30 AM - 12:30 PM" },
     { eventName: "Lathe War", venue: "Science Block Auditorium", timing: "11:00 AM - 01:00 PM" },
     { eventName: "Treasure Hunt", venue: "Main Cafeteria", timing: "01:00 PM - 02:00 PM" },
     { eventName: "BGMI", venue: "Design Studio", timing: "02:30 PM - 04:30 PM" },
