@@ -9,7 +9,7 @@ const EventsSection = () => {
         {
             id: 1,
             name: "Robotics Events",
-            bg: "/api/placeholder/350/350",
+            bg: "/Event_card_picture/Robotics.png",
             subEvents: [
                 {
                     id: 101,
@@ -61,7 +61,7 @@ const EventsSection = () => {
                     details:
                         "Show your tactical prowess in this 5v5 shooter tournament.",
                     Day: "4th April, 2025",
-                    Timing: "2 pm - 5 pm",
+                    Timing: "10 am - 5 pm",
                     Location: "Convention Hall",
                     Registration_Price: "Starting from ₹150",
                     registrationLink: "https://forms.gle/WyHWVwJHSiNTqHMY8",
