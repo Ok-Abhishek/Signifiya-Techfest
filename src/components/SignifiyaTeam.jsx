@@ -5,12 +5,12 @@ const SignifiyaTeam = () => {
     {
       name: "Ms. Soodipa Chakraborty",
       designation: "Assistant Professor, ME, SOET",
-      img: "/api/placeholder/150/150"
+      img: "/pic/maam.jpeg"
     },
     {
       name: "Mr. Nisarga Chand",
       designation: "Assistant Professor, ECE, SOET",
-      img: "/api/placeholder/150/150"
+      img: "/pic/sir.jpeg"
     }
   ];
 
@@ -18,64 +18,64 @@ const SignifiyaTeam = () => {
     {
       name: "Tapu Shekhar Saha",
       designation: "4th Year B.Tech CSE, SOET",
-      img: "/api/placeholder/150/150"
+      img: "/pic/topu.jpeg"
     },
     {
       name: "Abhishek Bhowmik",
       designation: "4th Year B.Tech CSE, SOET",
-      img: "/api/placeholder/150/150"
+      img: "/pic/avi .jpeg"
     },
     {
       name: "Debjit Debnath",
       designation: "4th Year B.Tech ECE, SOET",
-      img: "/api/placeholder/150/150"
+      img: "/pic/dejitr.jpeg"
     },
     {
       name: "Sankhadeep Mandal",
       designation: "4th Year B.Tech CE, SOET",
-      img: "/api/placeholder/150/150"
+      img: "/pic/sankhadip.jpeg"
     },
     {
       name: "Hrishav Dey",
       designation: "3rd Year B.Tech CSE, SOET",
-      img: "/api/placeholder/150/150"
+      img: "/pic/hri.jpeg"
     },
     {
       name: "Sudipto Barman",
       designation: "3rd Year B.Tech ME, SOET",
-      img: "/api/placeholder/150/150"
+      img: "/pic/sudipto.jpeg"
     }
 ];
 
 
   const organizingTeamMembers = [
-    { name: "Ahonaa Mukherjee", designation: "4th Year B.Tech BME, SOET", img: "/api/placeholder/120/120" },
-    { name: "Adrija Sahu", designation: "4th Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Milan Maji", designation: "3rd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Pradipti Chakraborty", designation: "3rd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Dipshikha Mahato", designation: "2nd Year B.Tech BME, SOET", img: "/api/placeholder/120/120" },
-    { name: "Shuvodip Dutta Banik", designation: "2nd Year B.Tech ECE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Sommath Singha Roy", designation: "2nd Year B.Tech ECE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Sourish Samanta", designation: "2nd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Arijit De", designation: "2nd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Digant Mishra", designation: "2nd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Manobendro Kr. Mondal", designation: "2nd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Aninda Debta", designation: "2nd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Arnab Mondal", designation: "2nd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Garima Roy", designation: "2nd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Snehassish Mondal", designation: "2nd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Samriddhi Sinha", designation: "2nd Year B.Tech CSE, SOET", img: "/api/placeholder/120/120" },
-    { name: "Sneha Bhowmick", designation: "2nd Year BCA, SOET", img: "/api/placeholder/120/120" },
-    { name: "Prithwiraj Mazumdar", designation: "2nd Year BCA, SOET", img: "/api/placeholder/120/120" },
-    { name: "Pritam Mondal", designation: "2nd Year BCA, SOET", img: "/api/placeholder/120/120" }
+    { name: "Ahonaa Mukherjee", designation: "4th Year B.Tech BME, SOET", img: "/pic/ahonaa.jpeg" },
+    { name: "Adrija Sahu", designation: "4th Year B.Tech CSE, SOET", img: "/pic/adrija.jpeg" },
+    { name: "Milan Maji", designation: "3rd Year B.Tech CSE, SOET", img: "/pic/milan.jpeg" },
+    { name: "Pradipti Chakraborty", designation: "3rd Year B.Tech CSE, SOET", img: "/pic/jiya .jpg" },
+    { name: "Dipshikha Mahato", designation: "2nd Year B.Tech BME, SOET", img: "/pic/dipshikha.jpeg" },
+    { name: "Shuvodip Dutta Banik", designation: "2nd Year B.Tech ECE, SOET", img: "/pic/subhodip.jpg" },
+    { name: "Sommath Singha Roy", designation: "2nd Year B.Tech ECE, SOET", img: "/pic/somnath.jpg" },
+    { name: "Sourish Samanta", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/sourish.jpeg" },
+    { name: "Arijit De", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/arijit.jpeg" },
+    { name: "Digant Mishra", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/digant.jpeg" },
+    { name: "Manobendro Kr. Mondal", designation: "2nd Year BCA, SOET", img: "/pic/manob.jpeg" },
+    { name: "Aninda Debta", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/aninda.jpeg" },
+    { name: "Arnab Mondal", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/arnab.jpeg" },
+    { name: "Garima Roy", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/garima.jpeg" },
+    { name: "Snehasish Mondal", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/snehashish.jpeg" },
+    { name: "Samriddhi Sinha", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/samrridhi.jpeg" },
+    { name: "Sneha Bhowmick", designation: "2nd Year BCA, SOET", img: "/pic/sneha.jpeg" },
+    { name: "Prithwiraj Mazumdar", designation: "2nd Year BCA, SOET", img: "/pic/prithwi.jpeg" },
+    { name: "Pritam Mondal", designation: "2nd Year BCA, SOET", img: "/pic/pritam.jpeg" }
 ];
 
 
   return (
-    <div className="min-h-screen py-24 relative z-20 px-4 sm:px-6 lg:px-8 text-white">
+    <div id='committee' className="min-h-screen py-24 relative z-20 px-4 sm:px-6 lg:px-8 text-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-semibold text-white mb-2 orbitron">Our Commitee</h1>
+          <h1 className="text-4xl font-semibold text-white mb-2 orbitron">Our Committee</h1>
           {/* <h2 className="text-2xl font-normal text-white/50 orbitron">Our Team</h2> */}
         </div>
         
