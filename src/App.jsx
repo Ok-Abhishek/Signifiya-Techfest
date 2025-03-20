@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { BsArrowUpRight } from "react-icons/bs";
 import herovid2 from "/herovid3.mp4";
-import "./index.css"; // Add styles for grid background
+import "./index.css"; 
+
 import EventDetailsPage from "./components/EventDetailsPage";
 import TwoLayerOrbitingSponsors from "./components/TwoLayerOrbitingSponsors";
 import EventFooter from "./components/EventFooter";
@@ -12,6 +13,7 @@ import EventsSection from "./components/EventsSection";
 import SignifiyaFAQ from "./components/SignifiyaFAQ";
 import { Link } from "react-scroll";
 import FuturisticCursor from "./components/FuturisticCursor";
+import SignifiyaTeam from "./components/SignifiyaTeam";
 
 
 
@@ -63,7 +65,8 @@ const App = () => {
                         </div>
 
                     </div>
-                    <Link to="events" smooth={true} duration={800}><div className="orbitron cursor-pointer z-20 absolute right-0 top-0  w-[70px] py-3 flex flex-col items-center justify-center rounded-bl-3xl">
+                    {/* <Link to="events" smooth={true} duration={800}> */}
+                    <div  onClick={() => setIsModalOpen(true)} className="orbitron cursor-pointer z-20 absolute right-0 top-0  w-[70px] py-3 flex flex-col items-center justify-center rounded-bl-3xl">
                         <ul className=" uppercase flex flex-col items-center text-white px-4 py-3 rounded-xl font-semibold bg-[#2D2D62]">
                             <li>R</li>
                             <li>e</li>
@@ -81,7 +84,8 @@ const App = () => {
                         <div className="m-1 text-white p-4 bg-[#2D2D62] rounded-full">
                             <BsArrowUpRight />
                         </div>
-                    </div></Link>
+                    </div>
+                    {/* </Link> */}
                     <div className=" orbitron absolute left-0 bottom-0 flex flex-col"></div>
                     <video
                         autoPlay
@@ -122,6 +126,8 @@ const App = () => {
             <EventsSection />
             <TwoLayerOrbitingSponsors />
 
+            <SignifiyaTeam />
+
             <SignifiyaFAQ />
 
             <EventFooter />
@@ -136,21 +142,21 @@ const App = () => {
                         >
                             &times;
                         </button>
-                        <h2 className="text-2xl font-semibold text-white">Registration Opening Soon!</h2>
+                        <h2 className="text-2xl font-semibold text-white">Registration Here</h2>
                         <p className="mt-3 text-gray-300">
-                            Stay tuned! Registration will be available soon. Keep an eye out for updates.
+                            ⚠ Only For Outsiders (Student from outside Adamas)
                         </p>
 
                         {/* QR Code Placeholder */}
                         <div className="mt-10 flex items-center justify-center">
-                            <img
+                            {/* <img
                                 src="/registration-opening-soon.gif"  // Add your GIF or image in the public folder
                                 alt="Registration Opening Soon"
                                 className="w-52 h-52 rounded-lg"
-                            />
-                            {/* <div className="w-52 h-52 bg-gray-800 flex items-center justify-center rounded-lg">
+                            /> */}
+                            <div className="w-52 h-52 bg-gray-800 flex items-center justify-center rounded-lg">
                                 <p className="text-sm text-gray-400">QR Code Soon</p>
-                            </div> */}
+                            </div>
                         </div>
 
                         <button
