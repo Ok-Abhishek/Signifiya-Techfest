@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { BsArrowUpRight } from "react-icons/bs";
 import herovid2 from "/herovid3.mp4";
-import "./index.css"; 
+import "./index.css";
 
 import EventDetailsPage from "./components/EventDetailsPage";
 import TwoLayerOrbitingSponsors from "./components/TwoLayerOrbitingSponsors";
@@ -66,7 +66,7 @@ const App = () => {
 
                     </div>
                     {/* <Link to="events" smooth={true} duration={800}> */}
-                    <div  onClick={() => setIsModalOpen(true)} className="orbitron cursor-pointer z-20 absolute right-0 top-0  w-[70px] py-3 flex flex-col items-center justify-center rounded-bl-3xl">
+                    <div onClick={() => setIsModalOpen(true)} className="orbitron cursor-pointer z-20 absolute right-0 top-0  w-[70px] py-3 flex flex-col items-center justify-center rounded-bl-3xl">
                         <ul className=" uppercase flex flex-col items-center text-white px-4 py-3 rounded-xl font-semibold bg-[#2D2D62]">
                             <li>R</li>
                             <li>e</li>
@@ -142,9 +142,9 @@ const App = () => {
                         >
                             &times;
                         </button>
-                        <h2 className="text-2xl font-semibold text-white">Registration Here</h2>
+                        <h2 className="text-2xl font-semibold text-white">Visitor's Registration</h2>
                         <p className="mt-3 text-gray-300">
-                            ⚠ Only For Outsiders (Student from outside Adamas)
+                            Please register for Visitor's Registration by scanning the QR code.
                         </p>
 
                         {/* QR Code Placeholder */}
@@ -155,7 +155,12 @@ const App = () => {
                                 className="w-52 h-52 rounded-lg"
                             /> */}
                             <div className="w-52 h-52 bg-gray-800 flex items-center justify-center rounded-lg">
-                                <p className="text-sm text-gray-400">QR Code Soon</p>
+                                <img
+                                    src="/Visitors_Form.png"  // Add your GIF or image in the public folder
+                                    alt="Registration Already Started"
+                                    className="w-52 h-52 rounded-lg"
+                                />
+                                {/* <p className="text-sm text-gray-400">QR Code Soon</p> */}
                             </div>
                         </div>
 

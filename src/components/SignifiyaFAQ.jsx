@@ -34,8 +34,8 @@ const SignifiyaFAQ = () => {
       answer: "Yes! Participants are allowed to register for multiple events, provided there are no time conflicts."
     },
     {
-      question: "Will there be prizes for the winners?",
-      answer: "Absolutely! Winners of each event will receive cash prizes, certificates, and trophies."
+      question: "Will there be Registration_Prices for the winners?",
+      answer: "Absolutely! Winners of each event will receive cash Registration_Prices, certificates, and trophies."
     },
     {
       question: "Are team events allowed?",
