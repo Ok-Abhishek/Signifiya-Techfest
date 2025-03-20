@@ -7,10 +7,10 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
   // const eventExample = {
   //   name: "Tech Conference 2025",
   //   image: "/api/placeholder/800/400", // Using placeholder image
-  //   timing: "March 15, 2025 • 9:00 AM - 5:00 PM",
-  //   location: "Tech Center, San Francisco, CA",
-  //   price: "From $99",
-  //   prize: "$5,000 Hackathon Prize Pool",
+  //   Day: "March 15, 2025 • 9:00 AM - 5:00 PM",
+  //   Timing: "Tech Center, San Francisco, CA",
+  //   Location: "From $99",
+  //   Registration_Price: "$5,000 Hackathon Registration_Price Pool",
   //   details: "Join us for the biggest tech conference of the year featuring keynotes from industry leaders, hands-on workshops, networking opportunities, and more!"
   // };
 
@@ -56,32 +56,32 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
             <div className="flex items-start gap-2">
               <Clock className="text-blue-800 mt-1 flex-shrink-0" size={20} />
               <div>
-                <h3 className="font-semibold text-sm text-gray-500">TIMING</h3>
-                <p>{selectedEvent.timing || "TBA"}</p>
+                <h3 className="font-semibold text-sm text-gray-500">Day</h3>
+                <p>{selectedEvent.Day || "TBA"}</p>
               </div>
             </div>
             
             <div className="flex items-start gap-2">
               <MapPin className="text-blue-800 mt-1 flex-shrink-0" size={20} />
               <div>
-                <h3 className="font-semibold text-sm text-gray-500">LOCATION</h3>
-                <p>{selectedEvent.location || "TBA"}</p>
+                <h3 className="font-semibold text-sm text-gray-500">Timing</h3>
+                <p>{selectedEvent.Timing || "TBA"}</p>
               </div>
             </div>
             
             <div className="flex items-start gap-2">
               <DollarSign className="text-blue-800 mt-1 flex-shrink-0" size={20} />
               <div>
-                <h3 className="font-semibold text-sm text-gray-500">PRICE</h3>
-                <p>{selectedEvent.price || "Free"}</p>
+                <h3 className="font-semibold text-sm text-gray-500">Location</h3>
+                <p>{selectedEvent.Location || "Free"}</p>
               </div>
             </div>
             
             <div className="flex items-start gap-2">
               <Award className="text-blue-800 mt-1 flex-shrink-0" size={20} />
               <div>
-                <h3 className="font-semibold text-sm text-gray-500">PRIZE</h3>
-                <p>{selectedEvent.prize || "N/A"}</p>
+                <h3 className="font-semibold text-sm text-gray-500">Registration_Price</h3>
+                <p>{selectedEvent.Registration_Price || "N/A"}</p>
               </div>
             </div>
           </div>

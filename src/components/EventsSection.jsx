@@ -14,25 +14,25 @@ const EventsSection = () => {
                 {
                     id: 101,
                     name: "Path Follower",
-                    bg: "/event/4.png",
+                    bg: "Event/4.png",
                     details:
                         "Build an autonomous robot that can navigate a predefined path with precision and speed.",
-                    timing: "To Be Announced",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹10,000",
+                    Day: "5th April, 2025",
+                    Timing: "10 am - 3 pm",
+                    Location: "Room 3102",
+                    Registration_Price: "Starting from ₹150",
                     registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
                 {
                     id: 102,
                     name: "Robo Terrain",
-                    bg: "/event/5.png",
+                    bg: "Event/5.png",
                     details:
                         "Design a robot that can traverse an obstacle-filled terrain and complete missions.",
-                    timing: "To Be Announced",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹10,000",
+                    Day: "4th April, 2025",
+                    Timing: "10 am - 3 pm",
+                    Location: "Room 3103",
+                    Registration_Price: "Starting from ₹150",
                     registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
                 },
             ],
@@ -45,38 +45,38 @@ const EventsSection = () => {
                 {
                     id: 201,
                     name: "BGMI (Battlegrounds Mobile India)",
-                    bg: "/event/1.png",
+                    bg: "Event/1.png",
                     details:
                         "Compete in an intense battle royale match and fight for survival.",
-                    timing: "To Be Announced",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹20,000 (₹13k for 1st, ₹5k for 2nd, ₹2k for 3rd)",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "To Be Announced",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹20,000 (₹13k for 1st, ₹5k for 2nd, ₹2k for 3rd)",
+                    registrationLink: "https://forms.gle/KiKKgjSbPf8xbTP87",
                 },
                 {
                     id: 202,
                     name: "Valorant",
-                    bg: "/event/2.png",
+                    bg: "Event/2.png",
                     details:
                         "Show your tactical prowess in this 5v5 shooter tournament.",
-                    timing: "4 PM - 8 PM",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹10,000",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "4 PM - 8 PM",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹10,000",
+                    registrationLink: "https://forms.gle/KiKKgjSbPf8xbTP87",
                 },
                 {
                     id: 203,
                     name: "PES (Pro Evolution Soccer)",
-                    bg: "/event/3.png",
+                    bg: "Event/3.png",
                     details:
                         "Compete in this exciting football esports tournament.",
-                    timing: "Coming Soon",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹10,000",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "Coming Soon",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹10,000",
+                    registrationLink: "https://forms.gle/KiKKgjSbPf8xbTP87",
                 },
             ],
         },
@@ -88,37 +88,37 @@ const EventsSection = () => {
                 {
                     id: 301,
                     name: "Coding Premier League",
-                    bg: "/event/6.png",
+                    bg: "Event/6.png",
                     details: "Solve complex problems in this coding showdown.",
-                    timing: "11 AM - 2 PM",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹7,000 (₹5k for 1st, ₹2k for 2nd)",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "11 AM - 2 PM",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹7,000 (₹5k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/JYhKCzM2Deh9my729",
                 },
                 {
                     id: 302,
                     name: "Science Olympiad",
-                    bg: "/event/7.png",
+                    bg: "Event/7.png",
                     details:
                         "Test your knowledge in science, logic, and critical thinking.",
-                    timing: "To Be Announced",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹4,000",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "To Be Announced",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹4,000",
+                    registrationLink: "https://forms.gle/JYhKCzM2Deh9my729",
                 },
                 {
                     id: 303,
-                    name: "Electrifying Circuits",
-                    bg: "/event/8.png",
+                    name: "Circuitronix",
+                    bg: "Event/15.png",
                     details:
                         "Design and build electrical circuits to complete a challenge.",
-                    timing: "2 PM - 5 PM",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹10,000 (₹5k for 1st, ₹2k for 2nd)",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "2 PM - 5 PM",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹10,000 (₹5k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/JYhKCzM2Deh9my729",
                 },
             ],
         },
@@ -129,27 +129,27 @@ const EventsSection = () => {
             subEvents: [
                 {
                     id: 401,
-                    name: "Waste to Wealth",
-                    bg: "/event/9.png",
+                    name: "Re-Fab",
+                    bg: "Event/16.png",
                     details:
                         "Create an innovative project using waste materials.",
-                    timing: "Coming Soon",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "Coming Soon",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/M4n1AU7MzFTKK7XTA",
                 },
                 {
                     id: 402,
                     name: "Lathe War",
-                    bg: "/event/10.png",
+                    bg: "Event/10.png",
                     details:
                         "Precision machining competition using a lathe machine.",
-                    timing: "To Be Announced",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "To Be Announced",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/M4n1AU7MzFTKK7XTA",
                 },
             ],
         },
@@ -161,25 +161,25 @@ const EventsSection = () => {
                 {
                     id: 501,
                     name: "Bridge Making",
-                    bg: "/event/11.png",
+                    bg: "Event/11.png",
                     details: "Design and build a stable bridge model.",
-                    timing: "Coming Soon",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "Coming Soon",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/GzuvX8GYxqo9rPDGA",
                 },
                 {
                     id: 502,
                     name: "Tower Making",
-                    bg: "/event/12.png",
+                    bg: "Event/12.png",
                     details:
                         "Construct a strong tower that can withstand tests.",
-                    timing: "To Be Announced",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "To Be Announced",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹6,000 (₹4k for 1st, ₹2k for 2nd)",
+                    registrationLink: "https://forms.gle/GzuvX8GYxqo9rPDGA",
                 },
             ],
         },
@@ -191,26 +191,26 @@ const EventsSection = () => {
                 {
                     id: 601,
                     name: "Treasure Hunt",
-                    bg: "/event/14.png",
+                    bg: "Event/14.png",
                     details:
                         "Solve riddles, find clues, and race to uncover the hidden treasure.",
-                    timing: "10 AM - 1 PM",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹6,000",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "10 AM - 1 PM",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹6,000",
+                    registrationLink: "https://forms.gle/uuwVxZZzayMiy89R7",
                 },
                 {
                     id: 602,
                     name: "Tug of War",
-                    bg: "/event/13.png",
+                    bg: "Event/13.png",
                     details:
                         "The ultimate test of teamwork and strength in a friendly competition.",
-                    timing: "3 AM - 5 PM",
-                    location: "Information Upcoming",
-                    price: "Coming Soon",
-                    prize: "₹10,000",
-                    registrationLink: "https://forms.gle/AM2nZNAqBDjGih177",
+                    Day: "3 AM - 5 PM",
+                    Timing: "Information Upcoming",
+                    Location: "Coming Soon",
+                    Registration_Price: "₹10,000",
+                    registrationLink: "https://forms.gle/uuwVxZZzayMiy89R7",
                 },
             ],
         },
@@ -416,10 +416,10 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
     // const eventExample = {
     //   name: "Tech Conference 2025",
     //   image: "/api/placeholder/800/400", // Using placeholder image
-    //   timing: "March 15, 2025 • 9:00 AM - 5:00 PM",
-    //   location: "Tech Center, San Francisco, CA",
-    //   price: "From $99",
-    //   prize: "$5,000 Hackathon Prize Pool",
+    //   Day: "March 15, 2025 • 9:00 AM - 5:00 PM",
+    //   Timing: "Tech Center, San Francisco, CA",
+    //   Location: "From $99",
+    //   Registration_Price: "$5,000 Hackathon Registration_Price Pool",
     //   details: "Join us for the biggest tech conference of the year featuring keynotes from industry leaders, hands-on workshops, networking opportunities, and more!"
     // };
 
@@ -481,9 +481,9 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
                             />
                             <div>
                                 <h3 className="font-semibold text-sm text-gray-500">
-                                    TIMING
+                                    DAY
                                 </h3>
-                                <p>{selectedEvent.timing || "TBA"}</p>
+                                <p>{selectedEvent.Day || "TBA"}</p>
                             </div>
                         </div>
 
@@ -494,9 +494,9 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
                             />
                             <div>
                                 <h3 className="font-semibold text-sm text-gray-500">
-                                    LOCATION
+                                    TIMING
                                 </h3>
-                                <p>{selectedEvent.location || "TBA"}</p>
+                                <p>{selectedEvent.Timing || "TBA"}</p>
                             </div>
                         </div>
 
@@ -507,9 +507,9 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
                             />
                             <div>
                                 <h3 className="font-semibold text-sm text-gray-500">
-                                    PRICE
+                                    LOCATION
                                 </h3>
-                                <p>{selectedEvent.price || "Free"}</p>
+                                <p>{selectedEvent.Location || "Free"}</p>
                             </div>
                         </div>
 
@@ -520,9 +520,9 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
                             />
                             <div>
                                 <h3 className="font-semibold text-sm text-gray-500">
-                                    PRIZE
+                                    REGISTRATION PRICE
                                 </h3>
-                                <p>{selectedEvent.prize || "N/A"}</p>
+                                <p>{selectedEvent.Registration_Price || "N/A"}</p>
                             </div>
                         </div>
                     </div>
