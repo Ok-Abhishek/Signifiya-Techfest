@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const texts = ["Signifiya 2k25", "Coming Soon...", "Loading..."];
+const texts = ["Signifiya 2k25", "Loading...", "on 4th & 5th April"];
 
 const Typewriter = () => {
     const [textIndex, setTextIndex] = useState(0);
