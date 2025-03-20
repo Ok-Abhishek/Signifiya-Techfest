@@ -28,7 +28,7 @@ const SignifiyaTeam = () => {
     {
       name: "Debjit Debnath",
       designation: "4th Year B.Tech ECE, SOET",
-      img: "/pic/dejitr.jpeg"
+      img: "/pic/dejitr.jpg"
     },
     {
       name: "Sankhadeep Mandal",
@@ -49,9 +49,9 @@ const SignifiyaTeam = () => {
 
 
   const organizingTeamMembers = [
-    { name: "Ahonaa Mukherjee", designation: "4th Year B.Tech BME, SOET", img: "/pic/ahonaa.jpeg" },
+    { name: "Ahonaa Mukherjee", designation: "4th Year B.Tech BME, SOET", img: "/pic/ahonaa.jpg" },
     { name: "Adrija Sahu", designation: "4th Year B.Tech CSE, SOET", img: "/pic/adrija.jpeg" },
-    { name: "Milan Maji", designation: "3rd Year B.Tech CSE, SOET", img: "/pic/milan.jpeg" },
+    { name: "Milan Maji", designation: "3rd Year B.Tech CSE, SOET", img: "/pic/milan.jpg" },
     { name: "Pradipti Chakraborty", designation: "3rd Year B.Tech CSE, SOET", img: "/pic/jiya .jpg" },
     { name: "Dipshikha Mahato", designation: "2nd Year B.Tech BME, SOET", img: "/pic/dipshikha.jpeg" },
     { name: "Shuvodip Dutta Banik", designation: "2nd Year B.Tech ECE, SOET", img: "/pic/subhodip.jpg" },
@@ -61,10 +61,10 @@ const SignifiyaTeam = () => {
     { name: "Digant Mishra", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/digant.jpeg" },
     { name: "Manobendro Kr. Mondal", designation: "2nd Year BCA, SOET", img: "/pic/manob.jpeg" },
     { name: "Aninda Debta", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/aninda.jpeg" },
+    { name: "Samriddhi Sinha", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/samrridhi.jpeg" },
     { name: "Arnab Mondal", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/arnab.jpeg" },
     { name: "Garima Roy", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/garima.jpeg" },
     { name: "Snehasish Mondal", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/snehashish.jpeg" },
-    { name: "Samriddhi Sinha", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/samrridhi.jpeg" },
     { name: "Sneha Bhowmick", designation: "2nd Year BCA, SOET", img: "/pic/sneha.jpeg" },
     { name: "Prithwiraj Mazumdar", designation: "2nd Year BCA, SOET", img: "/pic/prithwi.jpeg" },
     { name: "Pritam Mondal", designation: "2nd Year BCA, SOET", img: "/pic/pritam.jpeg" }

@@ -14,6 +14,7 @@ import SignifiyaFAQ from "./components/SignifiyaFAQ";
 import { Link } from "react-scroll";
 import FuturisticCursor from "./components/FuturisticCursor";
 import SignifiyaTeam from "./components/SignifiyaTeam";
+import SignifiyaTimeTable from "./components/SignifiyaTimeTable";
 
 
 
@@ -108,7 +109,9 @@ const App = () => {
                 <h1 className="orbitron text-white font-light md:text-[3vw] text-[8vw] mb-20">
                     Discover Signifiya 2025
                 </h1>
-                <p className="text-white max-w-8xl md:text-[1.2vw] text-[3.5vw] text-center md:px-28 px-6 ">
+                <div className=" flex md:flex-row flex-col w-full md:px-28 px-6">
+                <video className=" md:w-1/2 w-full" muted autoPlay loop src="/discover.mp4"></video>
+                <p className="text-white max-w-8xl md:text-[1.2vw] text-[3.5vw] py-5 md:px-5 text-left ">
                     Signifiya 2k25 is the annual inter-university tech fest
                     organized by the School of Engineering and Technology
                     (SOET), Adamas University. Designed to foster innovation and
@@ -121,7 +124,10 @@ const App = () => {
                     boundaries of technology. Join us, and be part of a
                     celebration where creativity meets excellence!
                 </p>
+                </div>
             </motion.section>
+
+            <SignifiyaTimeTable />
 
             <EventsSection />
             <TwoLayerOrbitingSponsors />

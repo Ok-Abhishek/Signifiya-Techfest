@@ -9,7 +9,7 @@ const EventsSection = () => {
         {
             id: 1,
             name: "Robotics Events",
-            bg: "/api/placeholder/350/350",
+            bg: "/Cardpictures/Robotics.png",
             subEvents: [
                 {
                     id: 101,
@@ -40,7 +40,7 @@ const EventsSection = () => {
         {
             id: 2,
             name: "Gaming Events",
-            bg: "/api/placeholder/350/350",
+            bg: "/Cardpictures/gaming-domain.png",
             subEvents: [
                 {
                     id: 201,
@@ -83,7 +83,7 @@ const EventsSection = () => {
         {
             id: 3,
             name: "Tech Events",
-            bg: "/api/placeholder/350/350",
+            bg: "/Cardpictures/technical.png",
             subEvents: [
                 {
                     id: 301,
@@ -125,7 +125,7 @@ const EventsSection = () => {
         {
             id: 4,
             name: "Mechanical Engineering Events",
-            bg: "/api/placeholder/350/350",
+            bg: "/Cardpictures/mechanical.png",
             subEvents: [
                 {
                     id: 401,
@@ -156,7 +156,7 @@ const EventsSection = () => {
         {
             id: 5,
             name: "Civil Engineering Events",
-            bg: "/api/placeholder/350/350",
+            bg: "/Cardpictures/civil.png",
             subEvents: [
                 {
                     id: 501,
@@ -186,7 +186,7 @@ const EventsSection = () => {
         {
             id: 6,
             name: "Non-Tech Fun Events",
-            bg: "/api/placeholder/350/350",
+            bg: "/Cardpictures/treasure.png",
             subEvents: [
                 {
                     id: 601,
@@ -261,7 +261,7 @@ const EventsSection = () => {
                             >
                                 {/* Futuristic Inner Glow */}
                                 <div
-                                    className="absolute inset-0 bg-black bg-opacity-40 backdrop-blur-md 
+                                    className="absolute inset-0 bg-black/40 bg-opacity-40 
                          flex items-center justify-center text-white text-2xl font-extrabold 
                          uppercase tracking-wider neon-text"
                                 >
