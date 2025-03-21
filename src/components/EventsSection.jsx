@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { Clock, MapPin, DollarSign, Award } from "lucide-react";
+import { Clock, MapPin, DollarSign, Calendar } from "lucide-react";
 
 const EventsSection = () => {
     // Main event categories
@@ -72,9 +72,9 @@ const EventsSection = () => {
                     bg: "Event/3.png",
                     details:
                         "Compete in this exciting football esports tournament.",
-                    Day: "4th April, 2025",
+                    Day: "5th April, 2025",
                     Timing: "10 am - 1 pm",
-                    Location: "Convention Hall",
+                    Location: "Labs: 3,4,5,6",
                     Registration_Price: "Starting from ₹150 ",
                     registrationLink: "https://forms.gle/NJ3uq2WXZZK1H6KQ6",
                 },
@@ -102,9 +102,9 @@ const EventsSection = () => {
                     bg: "Event/7.png",
                     details:
                         "Test your knowledge in science, logic, and critical thinking.",
-                    Day: "4th April, 2025",
-                    Timing: "2 pm - 4 pm",
-                    Location: "Room 5206 & 5207",
+                    Day: "5th April, 2025",
+                    Timing: "11 am - 3 pm",
+                    Location: "Room 4001",
                     Registration_Price: "Starting from ₹150 ",
                     registrationLink: "https://forms.gle/3A8akp5bfHq4wRWe8",
                 },
@@ -146,7 +146,7 @@ const EventsSection = () => {
                     details:
                         "Precision machining competition using a lathe machine.",
                     Day: "5th April, 2025",
-                    Timing: "9:30 am - 4 pm",
+                    Timing: "10 am - 3 pm",
                     Location: "Central Workshop",
                     Registration_Price: "Starting from ₹150 ",
                     registrationLink: "https://forms.gle/nGxatPYpyvXFZmQK6",
@@ -164,8 +164,8 @@ const EventsSection = () => {
                     bg: "Event/11.png",
                     details: "Design and build a stable bridge model.",
                     Day: "4th April, 2025",
-                    Timing: "10 am - 1pm",
-                    Location: "Room 5008 & 5002",
+                    Timing: "10 am - 1 pm",
+                    Location: "Room 5008 & 6002",
                     Registration_Price: "Starting from ₹150 ",
                     registrationLink: "https://forms.gle/Vm11nWoo37wJhDv99",
                 },
@@ -176,7 +176,7 @@ const EventsSection = () => {
                     details:
                         "Construct a strong tower that can withstand tests.",
                     Day: "4th April, 2025",
-                    Timing: "2 pm - 4 pm",
+                    Timing: "2 pm - 5 pm",
                     Location: "Room 5008 & 6002",
                     Registration_Price: "Starting from ₹150 ",
                     registrationLink: "https://forms.gle/puWt3asaABxQphiW9",
@@ -195,8 +195,8 @@ const EventsSection = () => {
                     details:
                         "Solve riddles, find clues, and race to uncover the hidden treasure.",
                     Day: "5th April, 2025",
-                    Timing: "1 pm - 3pm",
-                    Location: "Basketball Ground",
+                    Timing: "1:30 pm - 3:30 pm",
+                    Location: "Full Campus",
                     Registration_Price: "Starting from ₹150 ",
                     registrationLink: "https://forms.gle/6HiS1B9Q39FuK8Mp9",
                 },
@@ -475,7 +475,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
                     {/* Event Info Grid */}
                     <div className="grid grid-cols-2 gap-4 mb-6">
                         <div className="flex items-start gap-2">
-                            <Clock
+                            <Calendar
                                 className="text-purple-600 mt-1 flex-shrink-0"
                                 size={20}
                             />
@@ -488,7 +488,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
                         </div>
 
                         <div className="flex items-start gap-2">
-                            <MapPin
+                            <Clock
                                 className="text-purple-600 mt-1 flex-shrink-0"
                                 size={20}
                             />
@@ -501,7 +501,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
                         </div>
 
                         <div className="flex items-start gap-2">
-                            <DollarSign
+                            <MapPin
                                 className="text-purple-600 mt-1 flex-shrink-0"
                                 size={20}
                             />
@@ -514,7 +514,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
                         </div>
 
                         <div className="flex items-start gap-2">
-                            <Award
+                            <DollarSign
                                 className="text-purple-600 mt-1 flex-shrink-0"
                                 size={20}
                             />

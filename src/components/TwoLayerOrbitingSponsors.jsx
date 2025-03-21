@@ -226,9 +226,12 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
         </div>
         
         <div className="mt-8 sm:mt-16 md:mt-20">
+          <a target='_blank' href="https://forms.gle/i1nN2wjkn2FA6bf96">
           <button className="bg-[#3D3D82] hover:bg-[#4D4D92] text-white px-6 py-3 orbitron rounded-lg font-semibold transition text-sm sm:text-base">
             Become a Sponsor
           </button>
+          </a>
+          
         </div>
       </div>
     </section>

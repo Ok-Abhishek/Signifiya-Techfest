@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-scroll";
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const EventFooter = () => {
@@ -23,19 +24,13 @@ const EventFooter = () => {
               Join us for the most anticipated event of the year featuring amazing speakers, workshops, and networking opportunities.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              
+              
+              <a href="https://www.instagram.com/signifiya?igsh=dHFuODl1aWdreTg4" target='_blank' className="text-gray-400 hover:text-white transition">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
-                <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-white transition">
+              
+              <a href="https://youtube.com/@signifiya25?si=fro3lfD28zdMbBmo" target='_blank' className="text-gray-400 hover:text-white transition">
                 <Youtube size={20} />
               </a>
             </div>
@@ -45,13 +40,10 @@ const EventFooter = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Home</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">About</a></li>
-              {/* <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Schedule</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Speakers</a></li> */}
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Sponsors</a></li>
-              {/* <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Venue</a></li> */}
-              <li><a href="#" className="text-gray-400 hover:text-purple-400 transition">Register</a></li>
+              <li><Link to="home" className="text-gray-400 hover:text-purple-400 transition" smooth={true} duration={800}>Home</Link></li>
+              <li><Link to="about" className="text-gray-400 hover:text-purple-400 transition" smooth={true} duration={800}>About</Link></li>
+              <li><Link to="events" className="text-gray-400 hover:text-purple-400 transition" smooth={true} duration={800}>Events</Link></li>
+              <li><Link to="sponsors" className="text-gray-400 hover:text-purple-400 transition" smooth={true} duration={800}>Sponsors</Link></li>
             </ul>
           </div>
           
