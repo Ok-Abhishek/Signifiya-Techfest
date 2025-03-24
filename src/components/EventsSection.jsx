@@ -63,7 +63,7 @@ const EventsSection = () => {
                     Day: "4th April, 2025",
                     Timing: "10 am - 5 pm",
                     Location: "Convention Hall",
-                    Registration_Price: "Starting from ₹150",
+                    Registration_Price: "₹ 500",
                     registrationLink: "https://forms.gle/WyHWVwJHSiNTqHMY8",
                 },
                 {
@@ -110,7 +110,7 @@ const EventsSection = () => {
                 },
                 {
                     id: 303,
-                    name: "Circuitronix",
+                    name: "Circuitronix (Electrifying Circuits)",
                     bg: "Event/15.png",
                     details:
                         "Design and build electrical circuits to complete a challenge.",
