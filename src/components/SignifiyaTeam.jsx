@@ -67,7 +67,8 @@ const SignifiyaTeam = () => {
     { name: "Snehasish Mondal", designation: "2nd Year B.Tech CSE, SOET", img: "/pic/snehashish.jpeg" },
     { name: "Sneha Bhowmick", designation: "2nd Year BCA, SOET", img: "/pic/sneha.jpeg" },
     { name: "Prithwiraj Mazumdar", designation: "2nd Year BCA, SOET", img: "/pic/prithwi.jpeg" },
-    { name: "Pritam Mondal", designation: "2nd Year BCA, SOET", img: "/pic/pritam.jpeg" }
+    { name: "Pritam Mondal", designation: "2nd Year BCA, SOET", img: "/pic/pritam.jpeg" },
+    { name: "Leeza Bhowal", designation: "2nd Year EE, SOET", img: "/pic/leeza.jpg" }
 ];
 
 

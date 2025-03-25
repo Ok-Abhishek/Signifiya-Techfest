@@ -51,7 +51,7 @@ const EventsSection = () => {
                     Day: "5th April, 2025",
                     Timing: "10 am - 3 pm",
                     Location: "Conventional Hall",
-                    Registration_Price: "Starting from ₹150 ",
+                    Registration_Price: " ₹ 400 ",
                     registrationLink: "https://forms.gle/WLTU6ga4uHxr3uUz9",
                 },
                 {
