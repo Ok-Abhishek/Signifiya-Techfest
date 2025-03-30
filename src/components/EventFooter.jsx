@@ -18,7 +18,7 @@ const EventFooter = () => {
               alt="Event Logo" 
               className="h-12 mb-4"
             />
-            <h3 className="text-2xl font-bold mb-4 orbitron">Signifiya 2k25</h3>
+            <h3 className="text-2xl font-bold mb-4 orbitron">Signifiya 2025</h3>
             </div>
             <p className="text-gray-400 mb-4">
               Join us for the most anticipated event of the year featuring amazing speakers, workshops, and networking opportunities.

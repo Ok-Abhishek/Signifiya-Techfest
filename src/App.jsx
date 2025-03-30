@@ -112,7 +112,7 @@ const App = () => {
                 <div className=" flex md:flex-row flex-col w-full md:px-28 px-6">
                 <video className=" md:w-1/2 w-full" muted autoPlay loop src="/discover.mp4"></video>
                 <p className="text-white max-w-8xl md:text-[1.2vw] text-[3.5vw] py-5 md:px-5 text-left ">
-                    Signifiya 2k25 is the annual inter-university tech fest
+                    Signifiya 2025 is the annual inter-university tech fest
                     organized by the School of Engineering and Technology
                     (SOET), Adamas University. Designed to foster innovation and
                     collaboration, the event brings together technology
