@@ -403,7 +403,7 @@ const EventsSection = () => {
 //         </div>
 
 //         <div className="flex justify-between">
-//           <button className="bg-[#3D3D82] hover:bg-[#4D4D92] px-6 py-3 rounded-lg orbitron transition-colors">Register Now</button>
+//           <button className="bg-[#3D3D82] hover:bg-[#4D4D92] px-6 py-3 rounded-lg orbitron transition-colors">❌ Registration Closed  ❌</button>
 //           <button className="border border-[#3D3D82] text-[#5D5D9C] hover:bg-[#3D3D82] hover:text-white px-6 py-3 rounded-lg orbitron transition-colors" onClick={() => setSelectedEvent(null)}>Close</button>
 //         </div>
 //       </div>
@@ -539,7 +539,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
                     <div className="mt-6">
                         <a href={selectedEvent.registrationLink} target="_blank" >
                             <button className="bg-purple-600 orbitron hover:bg-purple-700 transition text-white px-6 py-3 rounded-lg w-full font-semibold">
-                                Register Now
+                                ❌ Registration Closed  ❌
                             </button>
                         </a>
                     </div>

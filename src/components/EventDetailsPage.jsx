@@ -95,7 +95,7 @@ const EventDetailsPage = ({ selectedEvent, setSelectedEvent }) => {
           {/* Register Button */}
           <div className="mt-6">
             <button className="bg-bluetext-blue-800 orbitron hover:bg-purple-700 transition text-white px-6 py-3 rounded-lg w-full font-semibold">
-              Register Now
+              ❌ Registration Closed  ❌
             </button>
           </div>
         </div>
