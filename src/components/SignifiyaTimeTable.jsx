@@ -3,25 +3,25 @@ import { Clock, MapPin } from 'lucide-react';
 
 const SignifiyaTimeTable = () => {
   const day1Events = [
-    { eventName: "Bridge Building" },
-    { eventName: "Tower Making" },
-    { eventName: "Coding Premier League"  },
-    { eventName: "Circuitronix (Electrifying Circuits)" },
-    { eventName: "Robo Terrain" },
-    { eventName: "Re-Fab" },
-    { eventName: "Tug Of War" },
-    { eventName: "Valorant" }
+    { eventName: "Bridge Building", venue: "5008", timing: "01:00 PM - 4:00 PM" },
+    { eventName: "Tower Making" , venue: "6002", timing: "03:00 PM - 6:00 PM"},
+    { eventName: "Coding Premier League" , venue: "2103 & 2104", timing: "01:00 PM - 06:00 PM"},
+    { eventName: "Circuitronix (Electrifying Circuits)" , venue: "5204", timing: "01:00 PM - 08:00 PM"},
+    { eventName: "Robo Terrain" , venue: "3103", timing: "01:00 PM - 06:00 PM"},
+    { eventName: "Re-Fab" , venue: "4001", timing: "01:00 PM - 06:00 PM"},
+    { eventName: "Tug Of War", venue: "CCD Ground", timing: "03:00 PM - 06:00 PM" },
+    { eventName: "Valorant" , venue: "Convention Hall", timing: "10:00 AM - 07:00 PM"}
   ];
   
   const day2Events = [
-    { eventName: "Coding Premier League", venue: "Main Auditorium", timing: "09:30 AM - 10:00 AM" },
-    { eventName: "Circuitronix (Electrifying Circuits)", venue: "Digital Arena, IT Block", timing: "10:30 AM - 01:00 PM" },
-    { eventName: "Path Follower", venue: "Electrical Lab, Block C", timing: "10:30 AM - 12:30 PM" },
-    { eventName: "Lathe War", venue: "Science Block Auditorium", timing: "11:00 AM - 01:00 PM" },
-    { eventName: "Treasure Hunt", venue: "Main Cafeteria", timing: "01:00 PM - 02:00 PM" },
-    { eventName: "BGMI", venue: "Design Studio", timing: "02:30 PM - 04:30 PM" },
-    { eventName: "Science Olympiad", venue: "University Campus", timing: "02:30 PM - 05:00 PM" },
-    { eventName: "PES", venue: "Sports Ground", timing: "04:30 PM - 05:30 PM" },
+    { eventName: "Coding Premier League", venue: "2103 & 2104", timing: "10:00 AM - 04:00 PM" },
+    { eventName: "Circuitronix (Electrifying Circuits)", venue: "5204", timing: "10:00 AM - 04:00 PM" },
+    { eventName: "Path Follower", venue: "3102", timing: "10:00 AM - 03:00 PM" },
+    { eventName: "Lathe War", venue: "Central Workshop", timing: "01:00 PM - 06:00 PM" },
+    { eventName: "Treasure Hunt", venue: "Entire College", timing: "01:00 PM - 04:00 PM" },
+    { eventName: "BGMI", venue: "Convention Hall", timing: "10:00 AM - 03:00 PM" },
+    { eventName: "Science Olympiad", venue: "CSE Lab 4001", timing: "11:00 AM - 03:00 PM" },
+    { eventName: "PES", venue: "CSE Lab 3 & 4", timing: "10:00 AM - 12:00 PM" },
     
   ];
 
@@ -34,6 +34,8 @@ const SignifiyaTimeTable = () => {
           <thead>
             <tr className="bg-white/10 border-b border-white/20">
               <th className="px-4 py-3 text-left text-base font-medium text-white">Event Names</th>
+              <th className="px-4 py-3 text-left text-base font-medium text-white">Venue</th>
+              <th className="px-4 py-3 text-left text-base font-medium text-white">Timing</th>
               
             </tr>
           </thead>
@@ -43,6 +45,8 @@ const SignifiyaTimeTable = () => {
                 <td className="px-4 py-3 font-light text-white text-sm">
                   {event.eventName}
                 </td>
+                <td className="px-4 py-3 font-light text-white text-sm">{event.venue}</td>
+                <td className="px-4 py-3 font-light text-white text-sm">{event.timing}</td>
                
               </tr>
             ))}
