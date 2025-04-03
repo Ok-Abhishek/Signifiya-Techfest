@@ -13,18 +13,17 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
       //{ id: 3, name: "FutureTech", image: "/Previous Sponsors 100 x 100/0.png", tier: "Platinum" }
     ],
     gold: [
-      { id: 4, name: "DevGroup", image: "/Previous Sponsors 100 x 100/1.png", tier: "Gold" },
-      { id: 5, name: "CloudSys", image: "/Previous Sponsors 100 x 100/2.png", tier: "Gold" },
-      { id: 6, name: "NetWorks", image: "/Previous Sponsors 100 x 100/3.png", tier: "Gold" },
-      { id: 7, name: "DataLabs", image: "/Previous Sponsors 100 x 100/4.png", tier: "Gold" }
+      { id: 4, name: "Harit Vikas", image: "/new_sponsors/1.jpeg", tier: "Gold" },
+      { id: 5, name: "Agastya", image: "/new_sponsors/2.png", tier: "Gold" },
+      { id: 6, name: "Xen Farms", image: "/new_sponsors/3.jpeg", tier: "Gold" },
+      { id: 7, name: "Webdeserts", image: "/new_sponsors/4.jpeg", tier: "Gold" }
     ],
     silver: [
-      { id: 8, name: "CodeCraft", image: "/Previous Sponsors 100 x 100/5.png", tier: "Silver" },
-      { id: 9, name: "AppStudio", image: "Previous Sponsors 100 x 100/6.png", tier: "Silver" },
-      { id: 10, name: "WebSphere", image: "Previous Sponsors 100 x 100/7.png", tier: "Silver" },
-      { id: 11, name: "ByteWorks", image: "Previous Sponsors 100 x 100/8.png", tier: "Silver" },
-      { id: 12, name: "TechSolutions", image: "Previous Sponsors 100 x 100/9.png", tier: "Silver" },
-      { id: 13, name: "DigitalEdge", image: "Previous Sponsors 100 x 100/10.png", tier: "Silver" }
+      { id: 8, name: "Spiritx", image: "/new_sponsors/5.jpg", tier: "Silver" },
+      { id: 9, name: "edugraph", image: "/new_sponsors/6.jpeg", tier: "Silver" },
+      { id: 10, name: "Adamitras", image: "/new_sponsors/7.jpeg", tier: "Silver" },
+      { id: 11, name: "pizzahut", image: "/new_sponsors/8.png", tier: "Silver" },
+      { id: 12, name: "Arun Icecreams", image: "/new_sponsors/9.png", tier: "Silver" }
     ]
   };
 
@@ -186,7 +185,7 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
               style={{ width: `${getCenterSize()}px`, height: `${getCenterSize()}px` }}
             >
               <div className="text-center p-4">
-                <h3 className="text-2xl sm:text-3xl md:text-4xl orbitron font-bold text-[#5D5D9C] uppercase">Past</h3>
+                <h3 className="text-2xl sm:text-3xl md:text-4xl orbitron font-bold text-[#5D5D9C] uppercase"></h3>
                 <h3 className="text-2xl sm:text-3xl md:text-4xl orbitron font-bold text-[#5D5D9C] uppercase">Sponsors</h3>
               </div>
             </div>
