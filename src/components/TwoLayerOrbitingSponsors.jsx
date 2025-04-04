@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
   const containerRef = useRef(null);
-  const [containerSize, setContainerSize] = useState({ width: 800, height: 600 });
+  const [containerSize, setContainerSize] = useState({ width: 1000, height: 800 });
   const [isMobile, setIsMobile] = useState(false);
   
   // Sample sponsors data for three layers if none provided
@@ -23,7 +23,8 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
       { id: 9, name: "edugraph", image: "/new_sponsors/6.jpeg", tier: "Silver" },
       { id: 10, name: "Adamitras", image: "/new_sponsors/7.jpeg", tier: "Silver" },
       { id: 11, name: "pizzahut", image: "/new_sponsors/8.png", tier: "Silver" },
-      { id: 12, name: "Arun Icecreams", image: "/new_sponsors/9.png", tier: "Silver" }
+      { id: 12, name: "Arun Icecreams", image: "/new_sponsors/9.png", tier: "Silver" },
+      { id: 13, name: "Amuzi", image: "/new_sponsors/10.png", tier: "Silver" }
     ]
   };
 
@@ -109,7 +110,7 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
   const getUniformItemSize = () => {
     const smallestDimension = Math.min(containerSize.width, containerSize.height);
     // Larger icons on mobile (10% vs 7% on desktop)
-    const baseSize = smallestDimension * (isMobile ? 0.1 : 0.07);
+    const baseSize = smallestDimension * (isMobile ? 0.1 : 0.09);
     return Math.max(baseSize, isMobile ? 35 : 30); // Increased minimum size on mobile
   };
   
