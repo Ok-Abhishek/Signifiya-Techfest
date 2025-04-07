@@ -4,7 +4,7 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
   const containerRef = useRef(null);
   const [containerSize, setContainerSize] = useState({ width: 1000, height: 800 });
   const [isMobile, setIsMobile] = useState(false);
-  
+
   // Sample sponsors data for three layers if none provided
   const defaultSponsors = {
     platinum: [
@@ -29,21 +29,21 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
   };
 
   // Use provided sponsors or default ones
-  const sponsorsList = sponsors.length > 0 
+  const sponsorsList = sponsors.length > 0
     ? {
-        // platinum: sponsors.filter(s => s.tier === "Platinum"),
-        gold: sponsors.filter(s => s.tier === "Gold"),
-        silver: sponsors.filter(s => s.tier === "Silver")
-      }
+      // platinum: sponsors.filter(s => s.tier === "Platinum"),
+      gold: sponsors.filter(s => s.tier === "Gold"),
+      silver: sponsors.filter(s => s.tier === "Silver")
+    }
     : defaultSponsors;
-  
+
   // State to track animation for each layer (different speeds)
   const [rotations, setRotations] = useState({
     // platinum: 0,
     gold: 120,     // Start at 120 degrees offset
     silver: 240    // Start at 240 degrees offset
   });
-  
+
   // Handle responsive sizing and detect mobile
   useEffect(() => {
     const handleResize = () => {
@@ -51,7 +51,7 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
         const width = containerRef.current.clientWidth;
         const mobile = window.innerWidth < 768;
         setIsMobile(mobile);
-        
+
         // Make height responsive but maintain aspect ratio
         // Increase height on mobile for better visibility
         setContainerSize({
@@ -60,94 +60,94 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
         });
       }
     };
-    
+
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  
+
   // Animation loop with smoother transitions
   useEffect(() => {
     let animationFrameId;
     let lastTimestamp = 0;
-    
+
     const animate = (timestamp) => {
       if (!lastTimestamp) lastTimestamp = timestamp;
       const elapsed = timestamp - lastTimestamp;
-      
+
       // Smoother animation with time-based updates
       if (elapsed > 16) { // ~60fps
         setRotations(prev => ({
-          platinum: (prev.platinum + 0.05 * elapsed/16) % 360, // Slowest
-          gold: (prev.gold + 0.08 * elapsed/16) % 360,         // Medium
-          silver: (prev.silver + 0.12 * elapsed/16) % 360      // Fastest
+          platinum: (prev.platinum + 0.05 * elapsed / 16) % 360, // Slowest
+          gold: (prev.gold + 0.08 * elapsed / 16) % 360,         // Medium
+          silver: (prev.silver + 0.12 * elapsed / 16) % 360      // Fastest
         }));
         lastTimestamp = timestamp;
       }
-      
+
       animationFrameId = requestAnimationFrame(animate);
     };
-    
+
     animationFrameId = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(animationFrameId);
   }, []);
-  
+
   // Calculate radiuses based on container size and device
   const getRadiusForLayer = (layer) => {
     const smallestDimension = Math.min(containerSize.width, containerSize.height);
     const maxRadius = smallestDimension / (isMobile ? 1.8 : 2.2); // Larger orbits on mobile
-    
+
     // Calculate each orbit's radius proportionally
-    switch(layer) {
+    switch (layer) {
       case 'platinum': return maxRadius * (isMobile ? 0.4 : 0.4);
       case 'gold': return maxRadius * (isMobile ? 0.65 : 0.65);
       case 'silver': return maxRadius * (isMobile ? 0.9 : 0.9);
       default: return maxRadius * 0.5;
     }
   };
-  
+
   // Calculate uniform item size based on container size
   const getUniformItemSize = () => {
     const smallestDimension = Math.min(containerSize.width, containerSize.height);
     // Larger icons on mobile (10% vs 7% on desktop)
-    const baseSize = smallestDimension * (isMobile ? 0.1 : 0.09);
+    const baseSize = smallestDimension * (isMobile ? 0.1 : 0.07);
     return Math.max(baseSize, isMobile ? 35 : 30); // Increased minimum size on mobile
   };
-  
+
   // Function to render a single orbit layer
   const renderOrbitLayer = (sponsors, rotation, layer) => {
     const radius = getRadiusForLayer(layer);
     const itemSize = getUniformItemSize();
-    
+
     // For mobile, limit the number of displayed sponsors to prevent crowding
-    const displayedSponsors = isMobile && sponsors.length > 4 
+    const displayedSponsors = isMobile && sponsors.length > 4
       ? sponsors.slice(0, 4) // Show only 4 sponsors per orbit on mobile
       : sponsors;
-    
+
     return displayedSponsors.map((sponsor, index) => {
       // Calculate position on the orbit
       const angle = (rotation + (index * (360 / displayedSponsors.length))) % 360;
       const radians = angle * (Math.PI / 180);
-      
+
       // Calculate x and y positions
       const left = `calc(50% + ${Math.sin(radians) * radius}px)`;
       const top = `calc(50% - ${Math.cos(radians) * radius}px)`;
-      
+
       return (
-        <div 
+        <div
           key={sponsor.id}
           className="absolute transform -translate-x-1/2 -translate-y-1/2"
-          style={{ 
-            left, 
+          style={{
+            left,
             top,
             zIndex: angle > 180 ? 0 : 5,
             transition: 'none' // Remove default transition for smoother animation
           }}
         >
           <div className="bg-[#2D2D62] p-1 sm:p-2 rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-transform">
-            <img 
-              src={sponsor.image} 
-              alt={sponsor.name} 
+            <img
+              src={sponsor.image}
+              alt={sponsor.name}
               className="rounded-full h-full object-cover"
               style={{ width: `${itemSize}px`, height: `${itemSize}px` }}
             />
@@ -173,15 +173,15 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
         <p className="text-[#8080B3] mb-10 sm:mb-16 max-w-2xl mx-auto text-sm sm:text-base">
           Thank you to all the organizations that made this event possible.
         </p>
-        
-        <div 
+
+        <div
           ref={containerRef}
           className="relative mx-auto py-16" // Added vertical padding for more space
           style={{ height: `${containerSize.height}px`, maxWidth: '100%' }}
         >
           {/* Center text */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">
-            <div 
+            <div
               className="rounded-full bg-[#2D2D62]/20 shadow-lg flex items-center justify-center"
               style={{ width: `${getCenterSize()}px`, height: `${getCenterSize()}px` }}
             >
@@ -191,47 +191,69 @@ const TwoLayerOrbitingSponsors = ({ sponsors = [] }) => {
               </div>
             </div>
           </div>
-          
+
           {/* Inner orbit - Platinum sponsors */}
           {renderOrbitLayer(sponsorsList.platinum, rotations.platinum, 'platinum')}
-          
+
           {/* Middle orbit - Gold sponsors */}
           {renderOrbitLayer(sponsorsList.gold, rotations.gold, 'gold')}
-          
+
           {/* Outer orbit - Silver sponsors */}
           {renderOrbitLayer(sponsorsList.silver, rotations.silver, 'silver')}
-          
+
           {/* Orbit paths (visual guides) */}
-          <div 
+          {/* <div
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#5D5D9C]/30"
-            style={{ 
-              width: `${getRadiusForLayer('platinum') * 2}px`, 
-              height: `${getRadiusForLayer('platinum') * 2}px` 
+            style={{
+              width: `${getRadiusForLayer('platinum') * 2}px`,
+              height: `${getRadiusForLayer('platinum') * 2}px`
+            }}
+          ></div> */}
+          <div
+            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#5D5D9C]/30"
+            style={{
+              width: `${getRadiusForLayer('gold') * 2}px`,
+              height: `${getRadiusForLayer('gold') * 2}px`
             }}
           ></div>
-          <div 
+          <div
             className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#5D5D9C]/30"
-            style={{ 
-              width: `${getRadiusForLayer('gold') * 2}px`, 
-              height: `${getRadiusForLayer('gold') * 2}px` 
-            }}
-          ></div>
-          <div 
-            className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-full border border-[#5D5D9C]/30"
-            style={{ 
-              width: `${getRadiusForLayer('silver') * 2}px`, 
-              height: `${getRadiusForLayer('silver') * 2}px` 
+            style={{
+              width: `${getRadiusForLayer('silver') * 2}px`,
+              height: `${getRadiusForLayer('silver') * 2}px`
             }}
           ></div>
         </div>
-        
+
+        {/* Sponsor Cards Section */}
+        <div className="mt-16 w-full max-w-7xl px-4 mx-auto">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+            {[...sponsorsList.gold, ...sponsorsList.silver].map(sponsor => (
+              <div
+                key={sponsor.id}
+                className="bg-transparent border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 transition-all p-4 text-center"
+              >
+                <img
+                  src={sponsor.image}
+                  alt={sponsor.name}
+                  className="w-20 h-20 object-cover rounded-full mx-auto mb-3 border border-[#3D3D82]/40"
+                />
+                <h4 className="text-md font-semibold text-[#2D2D62]">{sponsor.name}</h4>
+                {sponsor.description && (
+                  <p className="text-xs mt-1 text-gray-600">{sponsor.description}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
         <div className="mt-8 sm:mt-16 md:mt-20">
           <a target='_blank' href="https://forms.gle/i1nN2wjkn2FA6bf96">
-          <button className="bg-[#3D3D82] hover:bg-[#4D4D92] text-white px-6 py-3 orbitron rounded-lg font-semibold transition text-sm sm:text-base">
-            Become a Sponsor
-          </button>
+            <button className="bg-[#3D3D82] hover:bg-[#4D4D92] text-white px-6 py-3 orbitron rounded-lg font-semibold transition text-sm sm:text-base">
+              Become a Sponsor
+            </button>
           </a>
-          
+
         </div>
       </div>
     </section>
